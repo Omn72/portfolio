@@ -12,7 +12,7 @@ const Projects = () => {
       title: "DoubtBot AI ",
       description: "A real-time Chatbot AI",
       tech: ["React", "TypeScript", "Node.js", "Express", " Gemini API"],
-      image: "./public/p1.png",
+      image: "/p1.png",
       link: "https://doubtbot.netlify.app/",
       github: "https://github.com/omn7/chat-ai/tree/main",
       color: "from-neon-blue to-neon-purple"
@@ -21,7 +21,7 @@ const Projects = () => {
       title: "Crypto Price Tracker",
       description: "A real-time cryptocurrency price tracker built using React.js and the CoinGecko API. This project allows users to track live prices, market trends, and currency conversions in an intuitive UI.",
       tech: ["React.js", "Javascript", "Express", "Node", "CoinGecko API"],
-      image: "./public/p2.png",
+      image: "/p2.png",
       link: "https://findmycrypto.netlify.app/",
       github: "https://github.com/omn7/Crypto-Price-Tracking-App-",
       color: "from-neon-green to-neon-blue"
@@ -30,7 +30,7 @@ const Projects = () => {
       title: "Netflix clone",
       description: "First Clone Project.",
       tech: ["HTML", "CSS", "Javascript"],
-      image: "./public/p3.png",
+      image: "/p3.png",
       link: "https://omn7.github.io/netflix-clone/",
       github: "https://github.com/omn7/netflix-clone",
       color: "from-neon-purple to-neon-pink"
