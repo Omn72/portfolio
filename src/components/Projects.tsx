@@ -12,7 +12,7 @@ const Projects = () => {
       title: "DoubtBot AI ",
       description: "A real-time Chatbot AI",
       tech: ["React", "TypeScript", "Node.js", "Express", " Gemini API"],
-      image: "https://private-user-images.githubusercontent.com/92196534/423045969-34b33d08-8e62-477f-bd45-e29526368f89.png?jwt=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTUiLCJleHAiOjE3NDIwMjQ4NjQsIm5iZiI6MTc0MjAyNDU2NCwicGF0aCI6Ii85MjE5NjUzNC80MjMwNDU5NjktMzRiMzNkMDgtOGU2Mi00NzdmLWJkNDUtZTI5NTI2MzY4Zjg5LnBuZz9YLUFtei1BbGdvcml0aG09QVdTNC1ITUFDLVNIQTI1NiZYLUFtei1DcmVkZW50aWFsPUFLSUFWQ09EWUxTQTUzUFFLNFpBJTJGMjAyNTAzMTUlMkZ1cy1lYXN0LTElMkZzMyUyRmF3czRfcmVxdWVzdCZYLUFtei1EYXRlPTIwMjUwMzE1VDA3NDI0NFomWC1BbXotRXhwaXJlcz0zMDAmWC1BbXotU2lnbmF0dXJlPTNhMzI4ZjE3NzhjNWVjYzIyNWYwZjA3NDI5NGJmOWFjODk1MDlmODE5NGFlMWVmNzE4MGMwZDYxZjI5NDZjMDQmWC1BbXotU2lnbmVkSGVhZGVycz1ob3N0In0.LRmK-_UM3JTcx_jjsiNJeYtYx3GSATHulQSDs_t7gbQ",
+      image: "./public/p1.png",
       link: "https://doubtbot.netlify.app/",
       github: "https://github.com/omn7/chat-ai/tree/main",
       color: "from-neon-blue to-neon-purple"
@@ -21,7 +21,7 @@ const Projects = () => {
       title: "Crypto Price Tracker",
       description: "A real-time cryptocurrency price tracker built using React.js and the CoinGecko API. This project allows users to track live prices, market trends, and currency conversions in an intuitive UI.",
       tech: ["React.js", "Javascript", "Express", "Node", "CoinGecko API"],
-      image: "https://private-user-images.githubusercontent.com/92196534/409697944-efcde748-9e88-42cc-ae46-fe3099287428.png?jwt=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTUiLCJleHAiOjE3NDIwMjUxMjMsIm5iZiI6MTc0MjAyNDgyMywicGF0aCI6Ii85MjE5NjUzNC80MDk2OTc5NDQtZWZjZGU3NDgtOWU4OC00MmNjLWFlNDYtZmUzMDk5Mjg3NDI4LnBuZz9YLUFtei1BbGdvcml0aG09QVdTNC1ITUFDLVNIQTI1NiZYLUFtei1DcmVkZW50aWFsPUFLSUFWQ09EWUxTQTUzUFFLNFpBJTJGMjAyNTAzMTUlMkZ1cy1lYXN0LTElMkZzMyUyRmF3czRfcmVxdWVzdCZYLUFtei1EYXRlPTIwMjUwMzE1VDA3NDcwM1omWC1BbXotRXhwaXJlcz0zMDAmWC1BbXotU2lnbmF0dXJlPWM4ZjAzZjc4NTI0ZjQ1M2U3NjgyNmUzNWZhN2NjYjI0Y2RiZWI0MWQ3MDRhNWE0N2FjNTk0MjM4MzM0OWJkYmUmWC1BbXotU2lnbmVkSGVhZGVycz1ob3N0In0.gMEdd1z6b16w8wFc9jKOTV0ZH-l94bIV43V3WiGA0gw",
+      image: "./public/p2.png",
       link: "https://findmycrypto.netlify.app/",
       github: "https://github.com/omn7/Crypto-Price-Tracking-App-",
       color: "from-neon-green to-neon-blue"
@@ -30,7 +30,7 @@ const Projects = () => {
       title: "Netflix clone",
       description: "First Clone Project.",
       tech: ["HTML", "CSS", "Javascript"],
-      image: "https://private-user-images.githubusercontent.com/92196534/370819653-32c4ac4e-1a45-409b-9269-da5186e98bd0.png?jwt=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTUiLCJleHAiOjE3NDIwMjUzODIsIm5iZiI6MTc0MjAyNTA4MiwicGF0aCI6Ii85MjE5NjUzNC8zNzA4MTk2NTMtMzJjNGFjNGUtMWE0NS00MDliLTkyNjktZGE1MTg2ZTk4YmQwLnBuZz9YLUFtei1BbGdvcml0aG09QVdTNC1ITUFDLVNIQTI1NiZYLUFtei1DcmVkZW50aWFsPUFLSUFWQ09EWUxTQTUzUFFLNFpBJTJGMjAyNTAzMTUlMkZ1cy1lYXN0LTElMkZzMyUyRmF3czRfcmVxdWVzdCZYLUFtei1EYXRlPTIwMjUwMzE1VDA3NTEyMlomWC1BbXotRXhwaXJlcz0zMDAmWC1BbXotU2lnbmF0dXJlPWQxY2ZjMjZiYmE0MjQ3NGFhOWQyOWNiZDQwYzQ0MGFmOGIyZjgxZDE1MTRlY2FlYWIzN2VhYzI3ZmMyMzkzMGUmWC1BbXotU2lnbmVkSGVhZGVycz1ob3N0In0.jAe_fom-eu_bR0hYnEXInOSm3gf_27LnnxRnGhOU9fE",
+      image: "./public/p3.png",
       link: "https://omn7.github.io/netflix-clone/",
       github: "https://github.com/omn7/netflix-clone",
       color: "from-neon-purple to-neon-pink"
