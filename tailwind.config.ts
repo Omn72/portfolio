@@ -1,4 +1,3 @@
-
 import type { Config } from "tailwindcss";
 
 export default {
@@ -136,6 +135,14 @@ export default {
           '0%': { transform: 'translateY(0)' },
           '100%': { transform: 'translateY(-2000px)' },
         },
+        'rocketFloat': {
+          '0%, 100%': { transform: 'translateY(0) rotate(45deg)' },
+          '50%': { transform: 'translateY(-8px) rotate(45deg)' },
+        },
+        'rocketFlame': {
+          '0%, 100%': { opacity: '0.5', height: '10px' },
+          '50%': { opacity: '0.8', height: '15px' },
+        },
       },
       animation: {
         'accordion-down': 'accordion-down 0.2s ease-out',
@@ -149,6 +156,8 @@ export default {
         'ufoFloat': 'ufoFloat 8s ease-in-out infinite',
         'ufoBeam': 'ufoBeam 2s ease-in-out infinite',
         'stars': 'stars 50s linear infinite',
+        'rocketFloat': 'rocketFloat 4s ease-in-out infinite',
+        'rocketFlame': 'rocketFlame 0.8s ease-in-out infinite',
       },
       backgroundImage: {
         'space-gradient': 'linear-gradient(to bottom, #0A0E17, #151E33)',

@@ -2,7 +2,7 @@
 import React, { useEffect, useState } from 'react';
 import NavBar from './NavBar';
 import UfoLoader from './UfoLoader';
-import UfoCursor from './UfoCursor';
+import RocketCursor from './RocketCursor';
 import { useIsMobile } from '@/hooks/use-mobile';
 
 interface LayoutProps {
@@ -28,8 +28,8 @@ const Layout: React.FC<LayoutProps> = ({ children }) => {
     <>
       <UfoLoader isLoading={loading} />
       
-      {/* Show UFO cursor only on desktop */}
-      {!isMobile && <UfoCursor />}
+      {/* Show rocket cursor only on desktop */}
+      {!isMobile && <RocketCursor />}
       
       <div className="min-h-screen relative overflow-hidden">
         {/* Background stars */}

@@ -1,4 +1,3 @@
-
 @import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@400;500;600;700;800;900&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Exo:wght@100;200;300;400;500;600;700;800;900&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap');
@@ -191,4 +190,43 @@
 
 .animate-ufoBeam {
   animation: ufoBeam 2s ease-in-out infinite;
+}
+
+/* Add rocket animations */
+@keyframes rocketFloat {
+  0%, 100% {
+    transform: translateY(0) rotate(45deg);
+  }
+  50% {
+    transform: translateY(-8px) rotate(45deg);
+  }
+}
+
+@keyframes rocketFlame {
+  0%, 100% {
+    opacity: 0.5;
+    height: 10px;
+  }
+  50% {
+    opacity: 0.8;
+    height: 15px;
+  }
+}
+
+.animate-rocketFloat {
+  animation: rocketFloat 4s ease-in-out infinite;
+}
+
+.animate-rocketFlame {
+  animation: rocketFlame 0.8s ease-in-out infinite;
+}
+
+/* Keep existing animations */
+@keyframes stars {
+  0%, 100% {
+    opacity: 0.2;
+  }
+  50% {
+    opacity: 0.4;
+  }
 }

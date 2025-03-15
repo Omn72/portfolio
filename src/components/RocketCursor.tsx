@@ -1,7 +1,9 @@
 
 import React, { useEffect, useState } from 'react';
+import { Rocket } from 'lucide-react';
 
-const UfoCursor = () => {
+// Rename the component to RocketCursor
+const RocketCursor = () => {
   const [position, setPosition] = useState({ x: 0, y: 0 });
   const [visible, setVisible] = useState(false);
 
@@ -35,17 +37,19 @@ const UfoCursor = () => {
         transform: 'translate(-50%, -50%)',
       }}
     >
-      {/* UFO Cursor */}
+      {/* Rocket Cursor with glow effect */}
       <div className="relative">
-        {/* UFO Body */}
-        <div className="w-8 h-3 bg-neon-blue/80 rounded-full backdrop-blur-sm border border-white/20 shadow-neon-blue"></div>
-        {/* UFO Cabin */}
-        <div className="absolute w-4 h-4 bg-space-200/80 rounded-full -top-2 left-1/2 transform -translate-x-1/2 border border-neon-blue/50"></div>
-        {/* UFO Beam (only visible when not moving) */}
-        <div className="absolute w-2 h-8 bg-neon-blue/20 rounded-full top-3 left-1/2 transform -translate-x-1/2 animate-ufoBeam"></div>
+        <Rocket 
+          size={28} 
+          className="text-neon-blue rotate-45 animate-rocketFloat" 
+          strokeWidth={1.5}
+        />
+        {/* Rocket Flame/Trail */}
+        <div className="absolute w-2 h-10 bg-gradient-to-t from-neon-blue via-orange-500 to-transparent rounded-full 
+                      -bottom-8 left-1/2 transform -translate-x-1/2 rotate-45 animate-rocketFlame opacity-70"></div>
       </div>
     </div>
   );
 };
 
-export default UfoCursor;
+export default RocketCursor;
