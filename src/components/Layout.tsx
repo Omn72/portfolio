@@ -3,6 +3,7 @@ import React, { useEffect, useState } from 'react';
 import NavBar from './NavBar';
 import UfoLoader from './UfoLoader';
 import UfoCursor from './UfoCursor';
+import { useIsMobile } from '@/hooks/use-mobile';
 
 interface LayoutProps {
   children: React.ReactNode;
@@ -10,6 +11,7 @@ interface LayoutProps {
 
 const Layout: React.FC<LayoutProps> = ({ children }) => {
   const [loading, setLoading] = useState(true);
+  const isMobile = useIsMobile();
 
   useEffect(() => {
     // Simulate loading delay
@@ -26,8 +28,8 @@ const Layout: React.FC<LayoutProps> = ({ children }) => {
     <>
       <UfoLoader isLoading={loading} />
       
-      {/* Add custom UFO cursor */}
-      <UfoCursor />
+      {/* Show UFO cursor only on desktop */}
+      {!isMobile && <UfoCursor />}
       
       <div className="min-h-screen relative overflow-hidden">
         {/* Background stars */}

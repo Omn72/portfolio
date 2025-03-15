@@ -1,11 +1,14 @@
 
 import React, { useState, useEffect } from 'react';
 import { cn } from "@/lib/utils";
-import { Link } from 'react-router-dom';
+import { Menu, X } from 'lucide-react';
+import { useIsMobile } from '@/hooks/use-mobile';
 
 const NavBar = () => {
   const [activeSection, setActiveSection] = useState('home');
   const [isScrolled, setIsScrolled] = useState(false);
+  const [isMenuOpen, setIsMenuOpen] = useState(false);
+  const isMobile = useIsMobile();
   
   const navItems = [
     { id: 'home', label: 'Home' },
@@ -36,6 +39,11 @@ const NavBar = () => {
     return () => window.removeEventListener('scroll', handleScroll);
   }, [navItems]);
 
+  const handleNavClick = (id: string) => {
+    setActiveSection(id);
+    setIsMenuOpen(false); // Close mobile menu when item is clicked
+  };
+
   return (
     <header className={cn(
       "fixed top-0 left-0 right-0 z-40 transition-all duration-300",
@@ -49,28 +57,68 @@ const NavBar = () => {
           <span className="font-orbitron text-xl text-white">Cosmic<span className="text-gradient-blue">Dev</span></span>
         </div>
         
-        <nav>
-          <ul className="flex space-x-2 md:space-x-8">
-            {navItems.map(item => (
-              <li key={item.id}>
-                <a
-                  href={`#${item.id}`}
-                  className={cn(
-                    "px-3 py-2 text-sm md:text-base font-medium relative transition-colors duration-300",
-                    activeSection === item.id 
-                      ? "text-neon-blue" 
-                      : "text-space-700 hover:text-white"
-                  )}
-                >
-                  {item.label}
-                  {activeSection === item.id && (
-                    <span className="absolute -bottom-1 left-0 w-full h-0.5 bg-neon-blue rounded-full animate-pulse-slow" />
-                  )}
-                </a>
-              </li>
-            ))}
-          </ul>
-        </nav>
+        {isMobile ? (
+          <>
+            <button 
+              onClick={() => setIsMenuOpen(!isMenuOpen)}
+              className="p-2 text-white"
+            >
+              {isMenuOpen ? <X size={24} /> : <Menu size={24} />}
+            </button>
+            
+            {/* Mobile Menu */}
+            {isMenuOpen && (
+              <div className="fixed inset-0 top-16 bg-space-100/95 backdrop-blur-md z-30 flex flex-col items-center pt-10">
+                <nav>
+                  <ul className="flex flex-col space-y-6">
+                    {navItems.map(item => (
+                      <li key={item.id} className="text-center">
+                        <a
+                          href={`#${item.id}`}
+                          onClick={() => handleNavClick(item.id)}
+                          className={cn(
+                            "px-3 py-2 text-lg font-medium relative transition-colors duration-300",
+                            activeSection === item.id 
+                              ? "text-neon-blue" 
+                              : "text-space-700 hover:text-white"
+                          )}
+                        >
+                          {item.label}
+                          {activeSection === item.id && (
+                            <span className="absolute -bottom-1 left-0 w-full h-0.5 bg-neon-blue rounded-full animate-pulse-slow" />
+                          )}
+                        </a>
+                      </li>
+                    ))}
+                  </ul>
+                </nav>
+              </div>
+            )}
+          </>
+        ) : (
+          <nav>
+            <ul className="flex space-x-2 md:space-x-8">
+              {navItems.map(item => (
+                <li key={item.id}>
+                  <a
+                    href={`#${item.id}`}
+                    className={cn(
+                      "px-3 py-2 text-sm md:text-base font-medium relative transition-colors duration-300",
+                      activeSection === item.id 
+                        ? "text-neon-blue" 
+                        : "text-space-700 hover:text-white"
+                    )}
+                  >
+                    {item.label}
+                    {activeSection === item.id && (
+                      <span className="absolute -bottom-1 left-0 w-full h-0.5 bg-neon-blue rounded-full animate-pulse-slow" />
+                    )}
+                  </a>
+                </li>
+              ))}
+            </ul>
+          </nav>
+        )}
       </div>
     </header>
   );
