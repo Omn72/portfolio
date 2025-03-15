@@ -14,6 +14,7 @@ export default defineConfig(({ mode }) => ({
     mode === 'development' &&
     componentTagger(),
   ].filter(Boolean),
+  base: process.env.VITE_BASE_PATH || "/portfolio",
   resolve: {
     alias: {
       "@": path.resolve(__dirname, "./src"),
