@@ -1,4 +1,3 @@
-
 import React, { useState, useEffect } from 'react';
 import { cn } from "@/lib/utils";
 import { Menu, X } from 'lucide-react';
@@ -11,19 +10,20 @@ const NavBar = () => {
   const isMobile = useIsMobile();
   
   const navItems = [
-    { id: 'home', label: 'Home' },
-    { id: 'about', label: 'About' },
-    { id: 'projects', label: 'Projects' },
-    { id: 'contact', label: 'Contact' }
+    { id: 'home', label: 'Home', link: '/' },
+    { id: 'about', label: 'About', link: '#about' },
+    { id: 'hackathon', label: 'Hackathon', link: '/hackathon' }, 
+    { id: 'learn', label: 'Learn', link: '/learn' }
   ];
 
   useEffect(() => {
     const handleScroll = () => {
-      // Update navbar transparency
       setIsScrolled(window.scrollY > 50);
       
-      // Update active section based on scroll position
-      const sections = navItems.map(item => document.getElementById(item.id));
+      const sections = navItems
+        .filter(item => item.link.startsWith('#'))
+        .map(item => document.getElementById(item.id));
+        
       const scrollPosition = window.scrollY + 100;
       
       for (let i = sections.length - 1; i >= 0; i--) {
@@ -39,9 +39,11 @@ const NavBar = () => {
     return () => window.removeEventListener('scroll', handleScroll);
   }, [navItems]);
 
-  const handleNavClick = (id: string) => {
-    setActiveSection(id);
-    setIsMenuOpen(false); // Close mobile menu when item is clicked
+  const handleNavClick = (item) => {
+    if (item.link.startsWith('#')) {
+      setActiveSection(item.id);
+    }
+    setIsMenuOpen(false); 
   };
 
   return (
@@ -51,10 +53,12 @@ const NavBar = () => {
     )}>
       <div className="container flex items-center justify-between">
         <div className="flex items-center space-x-2">
-          <div className="w-8 h-8 rounded-full bg-gradient-to-r from-neon-blue to-neon-purple flex items-center justify-center">
-            <span className="font-orbitron text-white text-sm font-bold">CD</span>
+          <div className="w-8 h-8 rounded-full flex items-center justify-center">
+            <span className="font-orbitron text-white text-2xl font-bold">👨🏼‍🚀</span>
           </div>
-          <span className="font-orbitron text-xl text-white">Cosmic<span className="text-gradient-blue">Dev</span></span>
+          <span className="font-orbitron text-xl text-white">
+            Om<span className="text-gradient-blue">N</span>
+          </span>
         </div>
         
         {isMobile ? (
@@ -66,7 +70,6 @@ const NavBar = () => {
               {isMenuOpen ? <X size={24} /> : <Menu size={24} />}
             </button>
             
-            {/* Mobile Menu */}
             {isMenuOpen && (
               <div className="fixed inset-0 top-16 bg-space-100/95 backdrop-blur-md z-30 flex flex-col items-center pt-10">
                 <nav>
@@ -74,17 +77,19 @@ const NavBar = () => {
                     {navItems.map(item => (
                       <li key={item.id} className="text-center">
                         <a
-                          href={`#${item.id}`}
-                          onClick={() => handleNavClick(item.id)}
+                          href={item.link}
+                          onClick={() => handleNavClick(item)}
                           className={cn(
                             "px-3 py-2 text-lg font-medium relative transition-colors duration-300",
                             activeSection === item.id 
                               ? "text-neon-blue" 
                               : "text-space-700 hover:text-white"
                           )}
+                          target={item.link.startsWith('/') ? "_self" : "_blank"}
+                          rel="noopener noreferrer"
                         >
                           {item.label}
-                          {activeSection === item.id && (
+                          {activeSection === item.id && item.link.startsWith('#') && (
                             <span className="absolute -bottom-1 left-0 w-full h-0.5 bg-neon-blue rounded-full animate-pulse-slow" />
                           )}
                         </a>
@@ -101,16 +106,18 @@ const NavBar = () => {
               {navItems.map(item => (
                 <li key={item.id}>
                   <a
-                    href={`#${item.id}`}
+                    href={item.link}
                     className={cn(
                       "px-3 py-2 text-sm md:text-base font-medium relative transition-colors duration-300",
-                      activeSection === item.id 
+                      activeSection === item.id && item.link.startsWith('#')
                         ? "text-neon-blue" 
                         : "text-space-700 hover:text-white"
                     )}
+                    target={item.link.startsWith('/') ? "_self" : "_blank"}
+                    rel="noopener noreferrer"
                   >
                     {item.label}
-                    {activeSection === item.id && (
+                    {activeSection === item.id && item.link.startsWith('#') && (
                       <span className="absolute -bottom-1 left-0 w-full h-0.5 bg-neon-blue rounded-full animate-pulse-slow" />
                     )}
                   </a>

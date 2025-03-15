@@ -82,7 +82,7 @@ const Contact = () => {
                     required
                     className="w-full px-4 py-3 bg-space-300/30 border border-space-400/30 rounded-lg 
                     focus:outline-none focus:border-neon-blue focus:ring-1 focus:ring-neon-blue/50 transition-colors"
-                    placeholder="John Doe"
+                    placeholder="Rocket Raccoon"
                   />
                 </div>
                 
@@ -99,7 +99,7 @@ const Contact = () => {
                     required
                     className="w-full px-4 py-3 bg-space-300/30 border border-space-400/30 rounded-lg 
                     focus:outline-none focus:border-neon-blue focus:ring-1 focus:ring-neon-blue/50 transition-colors"
-                    placeholder="john@example.com"
+                    placeholder="rocketraccoon@example.com"
                   />
                 </div>
                 
@@ -164,39 +164,39 @@ const Contact = () => {
                 </p>
                 
                 <div className="flex flex-col gap-4">
-                  <a href="mailto:contact@cosmicdev.com" className="flex items-center gap-3 group">
+                  <a href="mailto:contact@dev.om@outlook.com" className="flex items-center gap-3 group">
                     <div className="w-8 h-8 sm:w-10 sm:h-10 rounded-full flex items-center justify-center glass-panel">
                       <Mail size={16} className="text-neon-blue group-hover:text-neon-purple transition-colors duration-300" />
                     </div>
                     <span className="text-space-700 text-sm sm:text-base group-hover:text-white transition-colors duration-300 truncate">
-                      contact@cosmicdev.com
+                      dev.om@outlook.com
                     </span>
                   </a>
                   
-                  <a href="#" className="flex items-center gap-3 group">
+                  <a href="https://github.com/omn7" className="flex items-center gap-3 group">
                     <div className="w-8 h-8 sm:w-10 sm:h-10 rounded-full flex items-center justify-center glass-panel">
                       <Github size={16} className="text-neon-blue group-hover:text-neon-purple transition-colors duration-300" />
                     </div>
                     <span className="text-space-700 text-sm sm:text-base group-hover:text-white transition-colors duration-300 truncate">
-                      github.com/cosmicdev
+                      github.com/omn7
                     </span>
                   </a>
                   
-                  <a href="#" className="flex items-center gap-3 group">
+                  <a href="https://linkedin.com/in/omnarkhede" className="flex items-center gap-3 group">
                     <div className="w-8 h-8 sm:w-10 sm:h-10 rounded-full flex items-center justify-center glass-panel">
                       <Linkedin size={16} className="text-neon-blue group-hover:text-neon-purple transition-colors duration-300" />
                     </div>
                     <span className="text-space-700 text-sm sm:text-base group-hover:text-white transition-colors duration-300 truncate">
-                      linkedin.com/in/cosmicdev
+                      linkedin.com/in/omnarkhede
                     </span>
                   </a>
                   
-                  <a href="#" className="flex items-center gap-3 group">
+                  <a href="https://x.com/mr_codex" className="flex items-center gap-3 group">
                     <div className="w-8 h-8 sm:w-10 sm:h-10 rounded-full flex items-center justify-center glass-panel">
                       <Twitter size={16} className="text-neon-blue group-hover:text-neon-purple transition-colors duration-300" />
                     </div>
                     <span className="text-space-700 text-sm sm:text-base group-hover:text-white transition-colors duration-300 truncate">
-                      twitter.com/cosmicdev
+                      X.com/mr_codex
                     </span>
                   </a>
                 </div>

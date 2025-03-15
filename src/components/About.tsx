@@ -10,32 +10,17 @@ const About = () => {
     { 
       name: 'Frontend Development', 
       icon: <Code className="w-5 h-5 sm:w-6 sm:h-6 text-neon-blue" />,
-      description: 'Creating beautiful, responsive interfaces with React, TypeScript, and modern CSS.'
+      description: 'Creating beautiful, responsive interfaces with React, TypeScript,Javascript, Next.js and modern CSS.'
     },
     { 
       name: 'Backend Architecture', 
       icon: <Server className="w-5 h-5 sm:w-6 sm:h-6 text-neon-blue" />,
-      description: 'Building robust APIs and services with Node.js, Python, and cloud infrastructure.'
+      description: 'Building robust APIs and services with Node.js, Java, and cloud infrastructure.'
     },
     { 
-      name: 'Systems Engineering', 
+      name: 'DSA', 
       icon: <Cpu className="w-5 h-5 sm:w-6 sm:h-6 text-neon-blue" />,
-      description: 'Deep understanding of computer systems, networks, and distributed architectures.'
-    },
-    { 
-      name: 'Web Technologies', 
-      icon: <Globe className="w-5 h-5 sm:w-6 sm:h-6 text-neon-blue" />,
-      description: 'Expert in modern web standards, performance optimization, and security practices.'
-    },
-    { 
-      name: 'DevOps & CI/CD', 
-      icon: <Rocket className="w-5 h-5 sm:w-6 sm:h-6 text-neon-blue" />,
-      description: 'Automating deployment pipelines and infrastructure using modern DevOps practices.'
-    },
-    { 
-      name: 'Software Architecture', 
-      icon: <Layers className="w-5 h-5 sm:w-6 sm:h-6 text-neon-blue" />,
-      description: 'Designing scalable, maintainable software systems with clean architecture patterns.'
+      description: 'Master DSA in Java with hands-on coding, problem-solving, and real-world applications.'
     }
   ];
 
@@ -59,7 +44,7 @@ const About = () => {
             <div className="glass-panel rounded-2xl p-6 sm:p-8 hover:shadow-neon-blue/10 transition-all duration-300 transform hover:-translate-y-1">
               <h3 className="font-orbitron text-xl mb-3 sm:mb-4">My Journey</h3>
               <p className="text-space-700 mb-3 sm:mb-4 text-sm sm:text-base">
-                I began my programming odyssey over a decade ago, fascinated by the potential of technology to solve real-world problems. Since then, I've evolved from writing simple scripts to architecting complex distributed systems.
+              I am a first-year Computer Science and Engineering student from BVCOEL with a passion for technology, problem-solving, and innovation. Currently exploring the vast world of programming, data structures, and algorithms, I am eager to learn and apply my skills to real-world challenges.
               </p>
               <p className="text-space-700 text-sm sm:text-base">
                 My approach combines technical excellence with a deep understanding of user needs. I believe that the best software isn't just functional—it's intuitive, elegant, and delightful to use.
@@ -79,7 +64,7 @@ const About = () => {
           
           <div className="text-center mb-8 sm:mb-12">
             <h3 className="text-xl sm:text-2xl font-bold mb-6 sm:mb-10">Technical Expertise</h3>
-            <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 sm:gap-6">
+            <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-3 sm:gap-6">
               {skills.map((skill, index) => (
                 <div 
                   key={index} 

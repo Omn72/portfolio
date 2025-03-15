@@ -8,8 +8,8 @@ import Contact from '../components/Contact';
 
 const Index = () => {
   useEffect(() => {
-    // Change document title
-    document.title = "CosmicDev | Space-Themed Portfolio";
+    
+    document.title = "Om Narkhede";
   }, []);
 
   return (

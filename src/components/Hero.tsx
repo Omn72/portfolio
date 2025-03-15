@@ -41,12 +41,11 @@ const Hero = () => {
           </div>
           
           <h1 ref={textRef} className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl xl:text-7xl font-bold mb-6 leading-tight">
-            Exploring the Digital Universe Through Code
+            Hello, I am Om Narkhede.
           </h1>
           
           <p className="text-base sm:text-lg md:text-xl text-space-700 mb-8 sm:mb-10 max-w-2xl mx-auto">
-            Building elegant solutions to complex problems with clean, efficient code. 
-            Navigating the cosmos of modern web development.
+          First-Year Computer Science and Engineering Student from BVCOEL
           </p>
           
           <div className="flex flex-col sm:flex-row justify-center items-center gap-4">

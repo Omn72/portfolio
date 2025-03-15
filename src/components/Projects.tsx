@@ -9,30 +9,30 @@ const Projects = () => {
   
   const projects = [
     {
-      title: "Nebula Analytics Platform",
-      description: "A real-time analytics dashboard for processing and visualizing large datasets with an intuitive interface.",
-      tech: ["React", "TypeScript", "Node.js", "D3.js", "AWS"],
-      image: "https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format&fit=crop&w=800&q=80",
-      link: "#",
-      github: "#",
+      title: "DoubtBot AI ",
+      description: "A real-time Chatbot AI",
+      tech: ["React", "TypeScript", "Node.js", "Express", " Gemini API"],
+      image: "https://private-user-images.githubusercontent.com/92196534/423045969-34b33d08-8e62-477f-bd45-e29526368f89.png?jwt=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTUiLCJleHAiOjE3NDIwMjQ4NjQsIm5iZiI6MTc0MjAyNDU2NCwicGF0aCI6Ii85MjE5NjUzNC80MjMwNDU5NjktMzRiMzNkMDgtOGU2Mi00NzdmLWJkNDUtZTI5NTI2MzY4Zjg5LnBuZz9YLUFtei1BbGdvcml0aG09QVdTNC1ITUFDLVNIQTI1NiZYLUFtei1DcmVkZW50aWFsPUFLSUFWQ09EWUxTQTUzUFFLNFpBJTJGMjAyNTAzMTUlMkZ1cy1lYXN0LTElMkZzMyUyRmF3czRfcmVxdWVzdCZYLUFtei1EYXRlPTIwMjUwMzE1VDA3NDI0NFomWC1BbXotRXhwaXJlcz0zMDAmWC1BbXotU2lnbmF0dXJlPTNhMzI4ZjE3NzhjNWVjYzIyNWYwZjA3NDI5NGJmOWFjODk1MDlmODE5NGFlMWVmNzE4MGMwZDYxZjI5NDZjMDQmWC1BbXotU2lnbmVkSGVhZGVycz1ob3N0In0.LRmK-_UM3JTcx_jjsiNJeYtYx3GSATHulQSDs_t7gbQ",
+      link: "https://doubtbot.netlify.app/",
+      github: "https://github.com/omn7/chat-ai/tree/main",
       color: "from-neon-blue to-neon-purple"
     },
     {
-      title: "Quantum Code Editor",
-      description: "Advanced code editor with AI-powered suggestions, real-time collaboration, and integrated debugging tools.",
-      tech: ["Vue.js", "WebAssembly", "GraphQL", "Docker", "Kubernetes"],
-      image: "https://images.unsplash.com/photo-1526374965328-7f61d4dc18c5?auto=format&fit=crop&w=800&q=80",
-      link: "#",
-      github: "#",
+      title: "Crypto Price Tracker",
+      description: "A real-time cryptocurrency price tracker built using React.js and the CoinGecko API. This project allows users to track live prices, market trends, and currency conversions in an intuitive UI.",
+      tech: ["React.js", "Javascript", "Express", "Node", "CoinGecko API"],
+      image: "https://private-user-images.githubusercontent.com/92196534/409697944-efcde748-9e88-42cc-ae46-fe3099287428.png?jwt=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTUiLCJleHAiOjE3NDIwMjUxMjMsIm5iZiI6MTc0MjAyNDgyMywicGF0aCI6Ii85MjE5NjUzNC80MDk2OTc5NDQtZWZjZGU3NDgtOWU4OC00MmNjLWFlNDYtZmUzMDk5Mjg3NDI4LnBuZz9YLUFtei1BbGdvcml0aG09QVdTNC1ITUFDLVNIQTI1NiZYLUFtei1DcmVkZW50aWFsPUFLSUFWQ09EWUxTQTUzUFFLNFpBJTJGMjAyNTAzMTUlMkZ1cy1lYXN0LTElMkZzMyUyRmF3czRfcmVxdWVzdCZYLUFtei1EYXRlPTIwMjUwMzE1VDA3NDcwM1omWC1BbXotRXhwaXJlcz0zMDAmWC1BbXotU2lnbmF0dXJlPWM4ZjAzZjc4NTI0ZjQ1M2U3NjgyNmUzNWZhN2NjYjI0Y2RiZWI0MWQ3MDRhNWE0N2FjNTk0MjM4MzM0OWJkYmUmWC1BbXotU2lnbmVkSGVhZGVycz1ob3N0In0.gMEdd1z6b16w8wFc9jKOTV0ZH-l94bIV43V3WiGA0gw",
+      link: "https://findmycrypto.netlify.app/",
+      github: "https://github.com/omn7/Crypto-Price-Tracking-App-",
       color: "from-neon-green to-neon-blue"
     },
     {
-      title: "Orbital Communication System",
-      description: "Secure, encrypted messaging platform with end-to-end encryption and self-destructing messages.",
-      tech: ["Svelte", "Rust", "WebRTC", "TensorFlow.js", "Firebase"],
-      image: "https://images.unsplash.com/photo-1470071459604-3b5ec3a7fe05?auto=format&fit=crop&w=800&q=80",
-      link: "#",
-      github: "#",
+      title: "Netflix clone",
+      description: "First Clone Project.",
+      tech: ["HTML", "CSS", "Javascript"],
+      image: "https://private-user-images.githubusercontent.com/92196534/370819653-32c4ac4e-1a45-409b-9269-da5186e98bd0.png?jwt=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTUiLCJleHAiOjE3NDIwMjUzODIsIm5iZiI6MTc0MjAyNTA4MiwicGF0aCI6Ii85MjE5NjUzNC8zNzA4MTk2NTMtMzJjNGFjNGUtMWE0NS00MDliLTkyNjktZGE1MTg2ZTk4YmQwLnBuZz9YLUFtei1BbGdvcml0aG09QVdTNC1ITUFDLVNIQTI1NiZYLUFtei1DcmVkZW50aWFsPUFLSUFWQ09EWUxTQTUzUFFLNFpBJTJGMjAyNTAzMTUlMkZ1cy1lYXN0LTElMkZzMyUyRmF3czRfcmVxdWVzdCZYLUFtei1EYXRlPTIwMjUwMzE1VDA3NTEyMlomWC1BbXotRXhwaXJlcz0zMDAmWC1BbXotU2lnbmF0dXJlPWQxY2ZjMjZiYmE0MjQ3NGFhOWQyOWNiZDQwYzQ0MGFmOGIyZjgxZDE1MTRlY2FlYWIzN2VhYzI3ZmMyMzkzMGUmWC1BbXotU2lnbmVkSGVhZGVycz1ob3N0In0.jAe_fom-eu_bR0hYnEXInOSm3gf_27LnnxRnGhOU9fE",
+      link: "https://omn7.github.io/netflix-clone/",
+      github: "https://github.com/omn7/netflix-clone",
       color: "from-neon-purple to-neon-pink"
     }
   ];
@@ -64,7 +64,7 @@ const Projects = () => {
                   <img 
                     src={project.image} 
                     alt={project.title}
-                    className="w-full h-full object-cover transition-transform duration-700 ease-in-out group-hover:scale-110"
+                    className="w-full h-full object-coverbg-white/30 backdrop-blur-sm transition-transform duration-700 ease-in-out group-hover:scale-110 "
                   />
                   <div className="absolute inset-0 bg-gradient-to-t from-space to-transparent opacity-90"></div>
                 </div>
@@ -212,7 +212,7 @@ const Projects = () => {
                       Check out my GitHub repository for additional projects and contributions to open source.
                     </p>
                     <a 
-                      href="#" 
+                      href="https://github.com/omn7" 
                       className="inline-flex items-center gap-2 text-neon-blue hover:text-neon-purple transition-colors duration-300"
                     >
                       <Github size={18} />

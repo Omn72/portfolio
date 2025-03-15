@@ -43,9 +43,9 @@ const Layout: React.FC<LayoutProps> = ({ children }) => {
         
         <footer className="py-8 text-center text-space-700 text-sm">
           <div className="container">
-            <p>© {new Date().getFullYear()} Cosmic Dev. All rights reserved.</p>
+            <p>© {new Date().getFullYear()} Om Narkhede. All rights reserved.</p>
             <p className="mt-2 text-space-600 text-xs">
-              Designed with precision in the digital cosmos.
+              Designed By Om Narkhede ❤️
             </p>
           </div>
         </footer>
