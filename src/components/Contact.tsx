@@ -29,7 +29,7 @@ const Contact = () => {
     setIsSubmitting(false);
     setSubmitResult({
       success: true,
-      message: 'Thank you for your message! I'll respond as soon as possible.'
+      message: "Thank you for your message! I'll respond as soon as possible."
     });
     
     // Reset form
