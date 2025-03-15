@@ -45,7 +45,7 @@ const Hero = () => {
           </h1>
           
           <p className="text-base sm:text-lg md:text-xl text-space-700 mb-8 sm:mb-10 max-w-2xl mx-auto">
-          First-Year Computer Science and Engineering Student from BVCOEL
+          First-Year Computer Science and Engineering Student from BVCOEL.
           </p>
           
           <div className="flex flex-col sm:flex-row justify-center items-center gap-4">
