@@ -29,16 +29,6 @@ const Layout: React.FC<LayoutProps> = ({ children }) => {
       {/* Add custom UFO cursor */}
       <UfoCursor />
       
-      {/* Hide default cursor when our custom cursor is active */}
-      <style jsx global>{`
-        body {
-          cursor: none;
-        }
-        a, button, input, textarea, select, [role="button"] {
-          cursor: none;
-        }
-      `}</style>
-      
       <div className="min-h-screen relative overflow-hidden">
         {/* Background stars */}
         <div className="space-stars"></div>
