@@ -1,101 +1,155 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@400;500;600;700;800;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Exo:wght@100;200;300;400;500;600;700;800;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@100;200;300;400;500;600;700;800&display=swap');
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
 @layer base {
   :root {
-    --background: 0 0% 100%;
-    --foreground: 222.2 84% 4.9%;
-
-    --card: 0 0% 100%;
-    --card-foreground: 222.2 84% 4.9%;
-
-    --popover: 0 0% 100%;
-    --popover-foreground: 222.2 84% 4.9%;
-
-    --primary: 222.2 47.4% 11.2%;
-    --primary-foreground: 210 40% 98%;
-
-    --secondary: 210 40% 96.1%;
-    --secondary-foreground: 222.2 47.4% 11.2%;
-
-    --muted: 210 40% 96.1%;
-    --muted-foreground: 215.4 16.3% 46.9%;
-
-    --accent: 210 40% 96.1%;
-    --accent-foreground: 222.2 47.4% 11.2%;
-
-    --destructive: 0 84.2% 60.2%;
-    --destructive-foreground: 210 40% 98%;
-
-    --border: 214.3 31.8% 91.4%;
-    --input: 214.3 31.8% 91.4%;
-    --ring: 222.2 84% 4.9%;
-
-    --radius: 0.5rem;
-
-    --sidebar-background: 0 0% 98%;
-
-    --sidebar-foreground: 240 5.3% 26.1%;
-
-    --sidebar-primary: 240 5.9% 10%;
-
-    --sidebar-primary-foreground: 0 0% 98%;
-
-    --sidebar-accent: 240 4.8% 95.9%;
-
-    --sidebar-accent-foreground: 240 5.9% 10%;
-
-    --sidebar-border: 220 13% 91%;
-
-    --sidebar-ring: 217.2 91.2% 59.8%;
-  }
-
-  .dark {
-    --background: 222.2 84% 4.9%;
+    --background: 220 33% 7%;
     --foreground: 210 40% 98%;
 
-    --card: 222.2 84% 4.9%;
+    --card: 222 47% 11%;
     --card-foreground: 210 40% 98%;
 
-    --popover: 222.2 84% 4.9%;
+    --popover: 222 47% 11%;
     --popover-foreground: 210 40% 98%;
 
-    --primary: 210 40% 98%;
-    --primary-foreground: 222.2 47.4% 11.2%;
+    --primary: 196 100% 50%;
+    --primary-foreground: 222 47% 11%;
 
-    --secondary: 217.2 32.6% 17.5%;
+    --secondary: 217 33% 18%;
     --secondary-foreground: 210 40% 98%;
 
-    --muted: 217.2 32.6% 17.5%;
-    --muted-foreground: 215 20.2% 65.1%;
+    --muted: 217 33% 18%;
+    --muted-foreground: 215 20% 65%;
 
-    --accent: 217.2 32.6% 17.5%;
-    --accent-foreground: 210 40% 98%;
+    --accent: 196 100% 50%;
+    --accent-foreground: 222 47% 11%;
 
-    --destructive: 0 62.8% 30.6%;
+    --destructive: 0 84% 60%;
     --destructive-foreground: 210 40% 98%;
 
-    --border: 217.2 32.6% 17.5%;
-    --input: 217.2 32.6% 17.5%;
-    --ring: 212.7 26.8% 83.9%;
-    --sidebar-background: 240 5.9% 10%;
-    --sidebar-foreground: 240 4.8% 95.9%;
-    --sidebar-primary: 224.3 76.3% 48%;
-    --sidebar-primary-foreground: 0 0% 100%;
-    --sidebar-accent: 240 3.7% 15.9%;
-    --sidebar-accent-foreground: 240 4.8% 95.9%;
-    --sidebar-border: 240 3.7% 15.9%;
-    --sidebar-ring: 217.2 91.2% 59.8%;
+    --border: 217 33% 18%;
+    --input: 217 33% 18%;
+    --ring: 212 100% 47%;
+
+    --radius: 0.5rem;
   }
 }
 
 @layer base {
   * {
-    @apply border-border;
+    @apply border-border selection:bg-accent/20 selection:text-foreground;
   }
-
+  
+  html {
+    @apply scroll-smooth;
+  }
+  
   body {
-    @apply bg-background text-foreground;
+    @apply bg-space text-foreground antialiased overflow-x-hidden font-exo;
+    background-image: radial-gradient(circle at center, rgba(15, 23, 42, 0.8) 0%, rgba(10, 14, 23, 1) 100%);
   }
+  
+  h1, h2, h3, h4, h5, h6 {
+    @apply font-orbitron font-bold tracking-wide;
+  }
+  
+  ::-webkit-scrollbar {
+    @apply w-2 bg-space-300/50;
+  }
+  
+  ::-webkit-scrollbar-thumb {
+    @apply bg-neon-blue/50 rounded-full;
+  }
+  
+  ::selection {
+    @apply bg-neon-blue/20 text-white;
+  }
+}
+
+@layer components {
+  .text-gradient-blue {
+    @apply bg-gradient-to-r from-neon-blue via-blue-400 to-neon-blue bg-clip-text text-transparent;
+  }
+  
+  .text-gradient-purple {
+    @apply bg-gradient-to-r from-neon-purple via-purple-400 to-neon-purple bg-clip-text text-transparent;
+  }
+  
+  .glass-panel {
+    @apply bg-space-50/30 backdrop-blur-lg border border-space-400/50 shadow-lg;
+  }
+  
+  .neon-border {
+    @apply border border-neon-blue/50 shadow-neon-blue;
+  }
+  
+  .neon-purple-border {
+    @apply border border-neon-purple/50 shadow-neon-purple;
+  }
+  
+  .space-stars {
+    @apply fixed top-0 left-0 w-full h-screen -z-10 overflow-hidden;
+  }
+  
+  .space-stars:before, .space-stars:after {
+    @apply absolute top-0 left-0 w-[200%] h-[200%] content-[''];
+    background-image: radial-gradient(2px 2px at calc(random(100) * 1%) calc(random(100) * 1%), white, transparent),
+      radial-gradient(2px 2px at calc(random(100) * 1%) calc(random(100) * 1%), white, transparent),
+      radial-gradient(2px 2px at calc(random(100) * 1%) calc(random(100) * 1%), white, transparent),
+      radial-gradient(2px 2px at calc(random(100) * 1%) calc(random(100) * 1%), white, transparent),
+      radial-gradient(2px 2px at calc(random(100) * 1%) calc(random(100) * 1%), white, transparent),
+      radial-gradient(2px 2px at calc(random(100) * 1%) calc(random(100) * 1%), white, transparent),
+      radial-gradient(2px 2px at calc(random(100) * 1%) calc(random(100) * 1%), white, transparent);
+    background-repeat: repeat;
+    background-size: 200px 200px;
+    opacity: 0.2;
+    animation: stars 100s linear infinite;
+  }
+  
+  .space-stars:after {
+    transform: rotate(180deg);
+    top: -100%;
+  }
+}
+
+.page-transition-enter {
+  opacity: 0;
+  transform: translateY(20px);
+}
+
+.page-transition-enter-active {
+  opacity: 1;
+  transform: translateY(0);
+  transition: opacity 400ms, transform 400ms;
+}
+
+.page-transition-exit {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.page-transition-exit-active {
+  opacity: 0;
+  transform: translateY(-20px);
+  transition: opacity 400ms, transform 400ms;
+}
+
+.cursor-glow {
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  background: rgba(0, 240, 255, 0.5);
+  mix-blend-mode: screen;
+  pointer-events: none;
+  position: fixed;
+  z-index: 9999;
+  transform: translate(-50%, -50%);
+  filter: blur(10px);
 }
