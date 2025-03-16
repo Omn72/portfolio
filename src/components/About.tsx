@@ -44,7 +44,7 @@ const About = () => {
             <div className="glass-panel rounded-2xl p-6 sm:p-8 hover:shadow-neon-blue/10 transition-all duration-300 transform hover:-translate-y-1">
               <h3 className="font-orbitron text-xl mb-3 sm:mb-4">My Journey</h3>
               <p className="text-space-700 mb-3 sm:mb-4 text-sm sm:text-base">
-              I am a first-year Computer Science and Engineering student from BVCOEL with a passion for technology, problem-solving, and innovation. Currently exploring the vast world of programming, data structures, and algorithms, I am eager to learn and apply my skills to real-world challenges.
+              A full-stack maestro who speaks fluent Java and dreams in binary 101. rocking front-end finesse and backend brilliance. Currently leveling up my DSA game—because who doesn’t love a good binary tree challenge?
               </p>
               <p className="text-space-700 text-sm sm:text-base">
                 My approach combines technical excellence with a deep understanding of user needs. I believe that the best software isn't just functional—it's intuitive, elegant, and delightful to use.
